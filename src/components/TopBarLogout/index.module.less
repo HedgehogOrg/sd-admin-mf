@@ -1,0 +1,35 @@
+.view {
+  display: flex;
+  align-items: center;
+	background-color: white;
+
+  .org-name {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+	.drop-down-button {
+    height: 100%;
+		display: inline-flex;
+		border-width: 0px;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0 10px;
+
+		.item-space {
+			padding: 0 5px;
+		}
+	}
+}
+
+.system-menu {
+  :global {
+    .ant-btn-link {
+      width: 100%;
+      color: #333;
+      &:disabled {
+        color: rgba(0,0,0,0.25);
+      }
+    }
+  }
+}
